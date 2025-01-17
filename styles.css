@@ -1,6 +1,6 @@
 /* .top {
-    background: url(images/banner.png);
-    background-size: cover;
+    background: url(images/star.png);
+    background-size: repeat;
     padding: 7px 0 5px 0;   
     animation: expand 3s ease-in-out 200ms forwards;
     width: 0;
@@ -15,6 +15,39 @@
     }
   } */
 
+
+/* star bg styles */
+.top {
+    background: url(images/star.png) repeat-x;
+    background-color: #ECF4F6;
+    height: 186px;  
+    /* padding: 7px 0 5px 0;    */
+    position: relative;
+    overflow: hidden;
+}
+
+/*for rotating stars */
+.top::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 400px;  
+    height: 100%;
+    background: url(images/star.png) repeat-x;
+    animation: rotateStars 3s linear infinite;
+}
+
+
+/* animation for rotating stars */
+@keyframes rotateStars {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 header {
     text-align: center;
