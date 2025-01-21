@@ -1,0 +1,23 @@
+article {
+    text-align: left;
+    padding: 60px 160px 60px 160px;
+}
+
+article h2 {
+    font-family: "Doto", sans-serif;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+article time {
+    font-family: "Manrope", sans-serif;
+    color: #919191;
+    font-style: italic;
+}
+
+article p {
+    line-height: 1.5;
+    max-width: 60ch;
+    margin: 1em 0;
+}
