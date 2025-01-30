@@ -6,6 +6,36 @@
     <title>Experiment 2</title>
 </head>
 <body>
+    <div class="output"></div>
+
+    <script>
+        function getUserInfo() {
+            const name = prompt("What's your name?");
+            const color = prompt("What's your favorite color?");
+            return { name, color };
+        }
+
+        function generateCompliment(userInfo) {
+        const compliments = [
+        "has really good taste in colors!",
+        "definitely knows how to pick a website color!",
+        "is as cool as their color choice!"
+        ];
     
+        const randomIndex = Math.floor(Math.random() * compliments.length);
+        return `${userInfo.name} ${compliments[randomIndex]}`;
+        }
+
+        function displayResult(message, color) {
+        const outputDiv = document.querySelector('.output');
+        outputDiv.innerHTML = `<h1>${message}</h1>`;
+        document.body.style.backgroundColor = color;
+        }
+
+        const userInfo = getUserInfo();
+        const compliment = generateCompliment(userInfo);
+        displayResult(compliment, userInfo.color);
+
+    </script>
 </body>
 </html>
