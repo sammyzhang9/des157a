@@ -1,0 +1,19 @@
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header {
+    position: absolute;
+    top: 7%;
+    right: 50%;
+    color: white;
+}
+
+#cloud {
+    position: absolute;
+    top: 30%;
+    left: 70%;
+    color: white;
+}
