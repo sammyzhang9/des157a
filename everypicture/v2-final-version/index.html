@@ -7,18 +7,31 @@
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- biz ud gothic -->
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDGothic&display=swap" rel="stylesheet">
+
+    <!-- connections -->
     <link href = "styles.css" rel="stylesheet">
 	<script src="script.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Click around to explore Tokyo's outskirts</h1>
+        <h1>「クリックして東京の郊外を探検しよう」</h1>
     </header>
 
-    <p id="cloud">
-        What do you see here?
-    </p>
-
+    <div class="cloud">
+        <p id="cloud-title">
+            Cloud 1
+        </p>
+        <img src="images/cloudline.png" alt="Cloud tracing" id="cloud-tracing">
+        <p id="cloud-description">
+            What do you see here?
+        </p>    
+    </div>
 
     <div class="image-container">
         <img src="images/background.png" alt="Background" class="background-image">
