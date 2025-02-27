@@ -19,22 +19,49 @@
 </head>
 <body>
     <header>
-        <h1>Click around to explore Tokyo's outskirts</h1>
-        <h1>「クリックして東京の郊外を探検しよう」</h1>
+        <h1>Move around to explore Tokyo's outskirts</h1>
+        <h1>「「動き回って東京の郊外を探検しよう」」</h1>
+        <div class="rectangle-header"></div>
     </header>
 
     <div class="cloud">
         <p id="cloud-title">
-            Cloud 1
+            Cloud 1「雲」
         </p>
         <img src="images/cloudline.png" alt="Cloud tracing" id="cloud-tracing">
         <p id="cloud-description">
-            What do you see here?
+            What do you see here?「何が見える？」
         </p>    
     </div>
 
     <div class="image-container">
         <img src="images/background.png" alt="Background" class="background-image">
+
+        <div class="img-overlay">
+            <video id="water-vid" loop>
+				<source src="images/water.mp4" type="video/mp4">			
+			</video>
+
+            <div class="rectangle-water"></div>
+            <p class="water-text">Bridge into the water「水上への橋」</p>
+        </div>
+
+        <div class="img-overlay">
+            <video id="bridge-vid" loop>
+				<source src="images/bridge.mp4" type="video/mp4">			
+			</video>
+
+            <div class="rectangle-bridge"></div>
+            <p class="bridge-text">Bridge back to Tokyo「東京へ戻る橋」</p>
+        </div>
+
+        <div class="img-overlay">
+            <video id="ocean-vid" loop>
+                <source src="images/ocean.mp4" type="video/mp4">
+            </video>
+
+            <div class="rectangle-ocean"></div>
+        </div>
     </div>
     
 </body>
