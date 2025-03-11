@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad Libs Version 2</title>
+
+    <!-- normalize -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- js -->
+    <script src="script.js" defer></script> 
+</head>
+<body>
+
+    <header><h1>Heist Intructions From Doc</h1></header>
+    <form id="madlibs-form">
+        <div class="form-content">
+            <div class="column">
+                <label for="adjective">Enter a adjective:</label>
+                <input type="text" id="adjective" required>
+
+                <label for="object">Enter a object:</label>
+                <input type="text" id="object" required>
+
+                <label for="verb">Enter a verb:</label>
+                <input type="text" id="verb" required>
+                <p class="input-hint">ex. run, skip</p>
+
+                <label for="name">Enter a name:</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="column">
+                <label for="time">Enter an time:</label>
+                <select id="time" required>
+                    <option value="">---</option>
+                    <option value="12:00">12:00</option>
+                    <option value="1:00">1:00</option>
+                    <option value="2:00">2:00</option>
+                    <option value="3:00">3:00</option>
+                    <option value="4:00">4:00</option>
+                    <option value="5:00">5:00</option>
+                    <option value="6:00">6:00</option>
+                    <option value="7:00">7:00</option>
+                    <option value="8:00">8:00</option>
+                    <option value="9:00">9:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                </select>
+                
+                <label for="weapon">Enter an weapon:</label>
+                <input type="text" id="weapon" required>
+
+                <label for="direction">Enter a direction:</label>
+                <select id="direction" required>
+                    <option value="">---</option>
+                    <option value="back">back</option>
+                    <option value="front">front</option>
+                    <option value="window">window</option>
+                    <option value="side">side</option>
+                </select>
+            </div>
+        </div>
+        
+        <input type="submit" value="Generate Story">
+
+        <section id="story-overlay" class="hidden">
+            <div class="popup">
+                <p id="story"></p>
+            </div>
+        </section>
+    </form>
+
+    <footer>
+        <p>Made with ☕ by Samantha Zhang</a></p>
+    </footer>
+</body>
+</html>
