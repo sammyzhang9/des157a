@@ -14,16 +14,23 @@
     <!-- script -->
     <script src="script.js"></script>
 
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div class="game-container">
         <div class="instructions">
-            <h1>Welcome to this game!</h1>
-            <p>You will have to answer 4 questions correctly in a row in order to win, if you get one question wrong you will have to restart.</p>
+            <h1>HOW LUCKY ARE YOU?</h1>
+            <p>You will have to answer 4 questions correctly in a row in order to win, if you get one question wrong you will have to restart. The cards have numbers from 1-4 with the suits; diamonds, spades, hearts, and clubs.</p>
         </div>
 
+        <div id="cardDisplay"></div>
+
         <section class="round1">
-            <p>Guess if the next card is red or black.</p>
+            <p>Guess if the first card is red or black.</p>
         </section>
 
         <section class="round2">
@@ -37,7 +44,15 @@
         <section class="round4">
             <p>Guess the suit of the last card.</p>
         </section>
+
+        <section class="gameOver">
+            <p>Game Over!</p>
+        </section>
+        
     </div>
 
+    <footer id ="audioSources">
+        <a href="sources.html">Audio Sources</a>
+    </footer>
 </body>
 </html>
